@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagina2</title>
+    <style type="text/css">
+        .container1 {
+            display: flex;
+            width: 100%;
+            height: 250vh;
+            
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+        .cabecalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 12vh;
+            background: black;
+            padding: 0 2vh;
+            margin: 2vh;
+        }
+
+        /* --- Estilos para a Div Principal (Banner) --- */
+        /* --- Estilos para a Div Principal (Banner) --- */
+.principal {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: space-between; 
+            height: 50vh;
+            background: black;
+            width:100%;
+            
+            /* CORREÇÃO DA IMAGEM: Define como fundo para ficar atrás do texto */
+            background-image: url('img/promocao.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+            
+           
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        .texto {
+            display: flex;
+            /* Centraliza horizontalmente e verticalmente o conteúdo (h1) */
+            justify-content: center; 
+            align-items: center; 
+            
+            width: 100%;
+            /* Ocupa a maior parte da altura para centralizar o texto no meio */
+            height: 100%; 
+            color: white; /* Cor do texto */
+        }
+
+        .texto h1 {
+            color: white;
+            font-size: 4vh; 
+            text-align: center;
+            /* Ajuste o tamanho da fonte conforme o desejado */
+        }
+
+        /* --- Estilos para os Botões --- */
+        .botoes {
+            display: flex;
+            /* Alinha o grupo de botões à esquerda do container principal */
+            align-self: flex-start; 
+            /* Espaçamento da margem esquerda e inferior */
+            padding-left: 5vh; 
+            padding-bottom: 5vh; 
+        }
+
+        .botao-saiba-mais, .botao-compre {
+            padding: 1.5vh 3vh;
+            border: none;
+            cursor: pointer;
+            margin-right: 1.5vh;
+            font-weight: bold;
+            font-size: 1.8vh;
+            /* Garante que os botões fiquem acima de qualquer fundo */
+            z-index: 10; 
+        }
+
+        .botao-saiba-mais {
+            background: white;
+            color: black;
+            border: 1px solid white;
+        }
+
+        .botao-compre {
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+        
+        /* --- Estilos do Cabeçalho (Não alterados) --- */
+        .grupo-esquerda, .grupo-direita {
+            display: flex;
+            align-items: center;
+        }
+
+        .traços {
+            width: 70px;  
+            height: 8vh;
+            background: red;
+            margin: 2vh;
+        }
+
+        .quadrado1 {
+            width: 150px;  
+            height: 8vh;
+            background: red;
+            margin: 2vh;
+        }
+
+        .logo {
+            width: 80px;  
+            height: 8vh;
+            background: red;
+            margin: 2vh;
+        }
+
+        .logoe {
+            width: 120px;  
+            height: 8vh;
+            color: white;
+            margin: 2vh;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .algo {
+            width: 300px;
+            height: 8vh;
+            background: red;
+            margin: 2vh;
+            align-items: flex-end;
+        }
+       .destaque { width: 100%;
+            height: 30vh;
+            background: black;
+            padding: 0 2vh;
+            background-image: url('img/eudora.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;]
+            margin: 2vh;
+            
+          }
+          .destaques { width: 20%;
+            height: 5vh;
+            background: black;
+            padding: 0 2vh;
+            
+          }
+          .produto3 {width: 24.2%;  
+            height: 30vh;
+            background:#F7EBC4;
+            margin: 2vh;
+          }
+           .produto4 {width: 24.2%;  
+            height: 30vh;
+            background:#F7EBC4;
+            margin left: 2vh;
+            margin-top: 2vh;
+        }
+
+          .produto1 {width: 24.2%;  
+            height: 30vh;
+            background:#F7EBC4;
+             
+             margin-top: 2vh;
+          }
+
+          
+          .quadrado-produtos {
+    position: relative;            /* permite o preço ficar sobreposto */
+    display: flex;
+    justify-content: center;       /* centraliza horizontal */
+    align-items: center;           /* centraliza vertical */
+    width: 90%;
+    height: 25vh;
+    background: white;
+    margin: 2vh;
+    overflow: hidden;              /* impede imagem de vazar */
+}
+
+.quadrado-produtos img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;           /* mantém proporção e centraliza */
+}
+
+
+.preço {
+  display: flex;
+    justify-content: center;   /* centraliza horizontal */
+    align-items: center;       /* centraliza vertical */
+    position: absolute;            /* coloca o preço por cima */
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 4vh;
+    background: #D9D9D9;
+    z-index: 10;
+    margin: 0 auto;   /* força a ir pro centro */
+    align-items: center;                   /* garante que fica acima da imagem */
+}
+          .produto2 {width: 24.2%;  
+            height: 30vh;
+            background:#F7EBC4;
+            margin-top: 2vh;
+            
+            margin-left: 2vh;
+
+           
+          }
+
+          .legenda3 {width: 24.2%;  
+            height: 10vh;
+            background:#F7EBC4;
+            margin: 2vh;
+          }
+           .legenda4 {width: 24.2%;  
+            height: 10vh;
+            background:#F7EBC4;
+            margin left: 2vh;
+            margin-top: 2vh;
+        }
+
+          .legenda1 {width: 24.2%;  
+            height: 10vh;
+            background:#F7EBC4;
+             
+             margin-top: 2vh;
+          }
+          .legenda2 {width: 24.2%;  
+            height: 10vh;
+            background:#F7EBC4;
+            margin-top: 2vh;
+            
+            margin-left: 2vh;
+
+           
+          }
+          .legendas3 {width: 24.2%;  
+            height: 20vh;
+            background:#F7EBC4;
+            margin: 2vh;
+          }
+           .legendas4 {width: 24.2%;  
+            height: 20vh;
+            background:#F7EBC4;
+            margin left: 2vh;
+            margin-top: 2vh;
+        }
+
+          .legendas1 {width: 24.2%;  
+            height: 20vh;
+            background:#F7EBC4;
+             
+             margin-top: 2vh;
+          }
+          .legendas2 {width: 24.2%;  
+            height: 20vh;
+            background:#F7EBC4;
+            margin-top: 2vh;
+            
+            margin-left: 2vh;
+
+           
+          }
+           .produtos {width: 100%; 
+           display: flex; 
+            height: 46vh;
+            
+            margin: 2vh;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+          .cabecalho1{
+            width: 100%;
+            height: 10vh;
+            background: 
+            padding: 0 2vh;
+            margin: 2vh;
+            align-content: flex-start;
+          }
+           .cabecalho2{
+            width: 100%;
+            height: 30vh;
+            background: 
+            padding: 0 2vh;
+            margin-top: 5vh;
+            align-content: flex-start;
+          }
+          .nome {
+           display: flex;
+           justify-content: center;   /* centraliza horizontal */
+           align-items: center;       /* centraliza vertical */
+           position: absolute;
+           bottom: 0;           /* fica grudado na parte inferior */
+           left: 50%;           /* joga pra metade */
+           transform: translateX(-50%); /* centraliza certinho */
+           width: 70%;
+           height: 4vh;
+           background: #D9D9D9;
+           z-index: 999;        /* garante que fica por cima da imagem */
+}
+
+       
+    </style>
+</head>-*
+<body>
+    <div class="container1">
+        <div class="cabecalho">
+            <div class="grupo-esquerda">
+                <div class="traços"></div>
+                <div class="quadrado1"></div>
+                <div class="logo"></div>
+                <div class="logoe">
+                    <h1>Skinlab</h1>
+                </div>
+            </div>
+
+            <div class="grupo-direita">
+                <div class="algo"></div>
+                <div class="logo"></div>
+                <div class="logo"></div>
+            </div>
+        </div>
+
+    
+
+
+        <div class="cabecalho1">
+                <div class="destaques"></div>
+        </div>
+        <div class="produtos">
+             <div class="produto1">
+                 <div class="quadrado-produtos">
+                    <img src="img/nutri.png" width="auto" height="auto">
+                   <div class="preço">
+                       <h1>R$39,99</h1>
+                   </div>                  
+                <div class="nome">
+             <h2>Shampoo Nutri Rose</h2>
+                    </div>   
+ 
+                 </div>
+             </div>
+             <div class="produto3">
+                 <div class="quadrado-produtos">
+                    <img src="img/condicionador.png" width="auto" height="auto">
+                    <div class="preço"><h1>R$35,99</h1></div>  
+                    <div class="nome">
+    <h2>Condicionador Nutri Rose</h2>
+</div>
+                 </div>
+                 
+             </div>
+            <div class= "produto4">
+                <div class="quadrado-produtos">
+                    <img src="img/reparacao.png" width="auto" height="auto">
+                   <div class="preço">
+                       <h1>R$55.99</h1>
+                </div>  
+                <div class="nome">
+    <h2>Mascara de reparação Nutri Rose</h2>
+</div>
+                 </div>
+            </div>
+            <div class="produto2">
+                <div class="quadrado-produtos">
+                    <img src="img/supreme.png" width="auto" height="auto">
+                    <div class="preço">
+                        <h1>R$75,99</h1>
+                    </div> 
+                    <div class="nome">
+             <h2>Supreme Oil Nutri Rose </h2>
+                    </div>
+                 </div>
+            </div>
+
+             <div class="legenda1">
+                 <h2>O Shampoo Nutri Rosé da Eudora limpa, nutre e dá brilho aos cabelos.</h2>
+             </div>
+             <div class="legenda3">
+                 <h2>O Condicionador Nutri Rosé da Eudora nutre, hidrata e dá brilho aos cabelos.</h2>
+             </div>
+            <div class= "legenda4">
+                <h2>A Máscara Nutri Rosé da Eudora nutre e repara os fios, devolvendo força, maciez e brilho.</h2>
+            </div>
+            <div class="legenda2">
+                <h2>Supreme Oil Nutri Rosé da Eudora é um óleo leve que nutre, dá brilho e protege os cabelos.</h2>
+            </div>
+
+            <div class="legendas1">
+                <img src="img/cabelo.png" width="100%" height="auto" >
+            </div>
+             <div class="legendas3">
+                 <img src="img/corpo.png" width="100%" height="auto" >
+             </div>
+            <div class= "legendas4">
+                <img src="img/rosto.png" width="100%" height="auto" >
+            </div>
+            <div class="legendas2">
+                <img src="img/mais.png" width="100%" height="auto" >
+            </div>
+            <div class="cabecalho2"> 
+                <div class="destaque">
+                    
+                </div>
+       </div>
+       <div class="produto1">
+                           <div class="quadrado-produtos">
+                              <img src="img/tratamento.png" width="auto" height="auto">
+                     <div class="preço">
+                          <h1>R$299,99</h1>
+                     </div>
+                      <div class="nome">
+             <h2>Shampoo e Tratatamento KERASYS</h2>
+                    </div>
+                 </div>
+       </div>
+             <div class="produto3">
+                 <div class="quadrado-produtos">
+                      <img src="img/blush.png" width="auto" height="auto">
+                     <div class="preço">
+                         <h1>R$49,99</h1>
+                     </div>
+                      <div class="nome">
+             <h2>Blush Compacto Sunny Cheeks - Flashy </h2>
+                    </div>
+                 </div>
+             </div>
+            <div class= "produto4">
+                <div class="quadrado-produtos">
+                      <img src="img/tonico.png" width="auto" height="auto">
+                     <div class="preço">
+                          <h1>R$179,99</h1>
+                     </div>
+                      <div class="nome">
+             <h2>Tónico medicube zero poros</h2>
+                    </div>
+                 </div>
+            </div>
+            <div class="produto2">
+                <div class="quadrado-produtos">
+                      <img src="img/ps.png" width="auto" height="auto">
+                     <div class="preço">
+                          <h1>R$39,99</h1>
+                     </div> 
+                     <div class="nome">
+             <h2>PS-01 FPS 60</h2>
+                    </div>
+                 </div>
+                 
+            </div>
+
+             <div class="legenda1">
+                 <h2>Shampoo e Tratatamento KERASYS limpeza profunda, reconstrução com queratina e fios mais fortes e brilhantes.</h2>
+             </div>
+             <div class="legenda3">
+                 <h2>Blush Compacto Sunny Cheeks - Flashy tem cor intensa, textura leve e acabamento natural para um efeito radiante o dia todo.</h2>
+             </div>
+            <div class= "legenda4">
+                <h2>Tônico Medicube Zero Pore   Controle da oleosidade, esfoliação suave e poros menos visíveis.</h2>
+            </div>
+            <div class="legenda2">
+                <h2>PS-01 Protetor solar FPS 60 com niacinamida, toque seco e controle da oleosidade.</h2>
+            </div>
+        </div>
+         
+        
+    </div>
+</body>
+</html>
